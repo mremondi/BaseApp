@@ -7,18 +7,9 @@
 //
 
 import Foundation
-
 class SampleRepository{
     
-    func getUser(userId: Int) -> User{
-        guard let user = getUserFromCache(userId: userId) else {
-            // make Network Request
-            return User()
-        }
-        return user
-    }
-    
-    private func getUserFromCache(userId: Int) -> User? {
-        return nil
+    func getSymbolList(){
+        
     }
 }

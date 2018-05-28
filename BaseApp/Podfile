@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+#platform :ios, '9.0'
 
 target 'BaseApp' do
   use_frameworks!
@@ -6,6 +6,7 @@ target 'BaseApp' do
   # Pods for BaseApp
     pod 'RxSwift',    '~> 4.0'
     pod 'RxCocoa',    '~> 4.0'
+    pod 'Alamofire'
 
   target 'BaseAppTests' do
     inherit! :search_paths
