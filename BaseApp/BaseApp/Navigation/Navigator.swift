@@ -1,8 +1,8 @@
 //
 //  Navigator.swift
-//  BaseApp
+//  Navigation
 //
-//  Created by Michael Remondi on 5/25/18.
+//  Created by Michael Remondi on 8/10/18.
 //  Copyright © 2018 Michael Remondi. All rights reserved.
 //
 

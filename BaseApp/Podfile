@@ -1,23 +1,26 @@
-#platform :ios, '9.0'
+platform :ios, '11.4'
+use_frameworks!
+project 'BaseApp.xcodeproj'
+workspace 'BaseApp'
+
+def networkingPods
+    pod 'Alamofire'
+end
 
 target 'BaseApp' do
-  use_frameworks!
-
-  # Pods for BaseApp
-    pod 'RxSwift',    '~> 4.0'
-    pod 'RxCocoa',    '~> 4.0'
-    pod 'Alamofire'
-
+  networkingPods
   target 'BaseAppTests' do
-    inherit! :search_paths
-    # Pods for testing
   end
+end
 
-  target 'BaseAppUITests' do
-    inherit! :search_paths
-    # Pods for testing
-    pod 'RxBlocking', '~> 4.0'
-    pod 'RxTest',     '~> 4.0'
-  end
+target 'HomeScreen' do
+    project 'HomeScreen/HomeScreen'
+    target 'HomeScreenTests' do
+    end
+end
 
+target 'Extensions' do
+    project 'Extensions/Extensions'
+    target 'ExtensionsTests' do
+    end
 end

@@ -1,8 +1,8 @@
 //
 //  AppNavigator.swift
-//  BaseApp
+//  Navigation
 //
-//  Created by Michael Remondi on 5/25/18.
+//  Created by Michael Remondi on 8/10/18.
 //  Copyright © 2018 Michael Remondi. All rights reserved.
 //
 
@@ -25,10 +25,10 @@ final class AppNavigator: Navigator{
     
     private func goToMainApp(window: UIWindow?){
         // Any type of Navigator can go here. E.g. a TabBarNavigator with sub-navigators children for each tab
-        let mainNavigator = MainNavigator(factory: factory, dismiss: { () in
+        let stackNavigator = StackNavigator(factory: factory, dismiss: { () in
             // include dismissal logic here. use this to switch between navigation flows
         })
-        window?.rootViewController = mainNavigator.rootViewController
+        window?.rootViewController = stackNavigator.rootViewController
         window?.makeKeyAndVisible()
     }
 }

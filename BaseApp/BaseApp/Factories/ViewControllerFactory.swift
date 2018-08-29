@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import HomeScreen
 
 protocol ViewControllerFactory{
-    func makeHomeViewController(navigator: Navigator) -> HomeViewController
+    func makeHomeViewController(navigator: Navigator) -> HomeController
 }

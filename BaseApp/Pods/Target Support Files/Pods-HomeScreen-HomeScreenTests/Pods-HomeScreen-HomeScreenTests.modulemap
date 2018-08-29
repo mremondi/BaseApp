@@ -1,0 +1,6 @@
+framework module Pods_HomeScreen_HomeScreenTests {
+  umbrella header "Pods-HomeScreen-HomeScreenTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
